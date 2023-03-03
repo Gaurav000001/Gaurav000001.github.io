@@ -1,58 +1,73 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 
 :root{
     --font-family: Arial;
     --nav-font-size: 1.1rem;
+    --primary-color: black;
+    --secondary-color: blue;
 }
 
-.navigation{
-  padding-bottom:30px;
-  position:absolute;
-  top:0;
-  width:100%;
-  z-index:1;
-}
+
 
 .navbar-right{
-  margin-top: 1rem;
   float:right;
-  padding-right:10%;
+  /* margin-right:5%; */
+  margin-top: 2%;
 }
 
-.navbar-right a{
+.bottom-loader{
   text-decoration:none;
   font-size: var(--nav-font-size);
   padding:10px;
-  color: #fff;
+  color: var(--primary-color);
   font-family: var(--font-family);
   font-weight:900;
+
+  /* display: inline-block; */
+  /* padding-bottom:0px; */
+  background-image: linear-gradient(var(--secondary-color) 50% 50%);
+  background-position: 80% 85%; /* OR bottom left */
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition:
+    background-size 0.3s,
+    background-position 0s 0.3s; /* change after the size immediately */
 }
 
-.navbar-right a:hover{
-  text-decoration:underline;
+.bottom-loader:hover{
+  background-position: 50% 85%;
+  background-size: 92% 2px;
 }
-.navbar-logo{
+
+
+/* #navigation>div{
+  background-color: black;
+} */
+
+/* .navbar-logo{
   padding-left:10%;
   font-family: var(--font-family);
   font-size:30px;
   font-weight:bold;
   text-decoration:none;
   color:#fff; 
-}
+} */
 
-.video-container {
+/* .video-container {
 z-index: -100;
 width:100%;
-height:90%;
+height:100%;
 overflow:hidden;
 position:absolute;
 top:0;
 left:0;
-}
+background-color: black;
+} */
 
-#video-bg{
-  width:100%;
- 
-}
 
 #resume:hover{
   background-color: #f9fcff;
@@ -63,4 +78,55 @@ left:0;
 #resume{
   border-radius: 10px;
   background-color: #1971c5;
+  margin-left: .5rem;
+
+  text-decoration:none;
+  font-size: var(--nav-font-size);
+  padding:10px;
+  color: #fff;
+  font-family: var(--font-family);
+  font-weight:900;
+}
+
+#personal-info{
+  width: 95vw;
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  /* margin: auto; */
+  /* border: 1px solid red; */
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+/* #picture{
+  width: 90vw;
+}
+#picture>img{
+  width: 20vw;
+  border-radius: 50%;
+  margin: auto;
+} */
+
+#nav-menu>div{
+  display: flex;
+  flex-direction: column;
+  /* line-height: 7vh; */
+}
+
+
+/*============================================  Dark - Light mode option  ===========================================*/
+.dark-mode{
+  --primary-color: rgb(255, 255, 255);
+  --secondary-color: #1579d6;
+}
+#dark-mode-icon>img{
+  width: 2vw;
+}
+#dark-mode-icon{
+  float: right;
+  margin: 0vw 2vw;
+}
+#dark-mode-icon:hover{
+  cursor: pointer;
 }

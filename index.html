@@ -10,39 +10,64 @@
 </head>
 <body>
     
-    <header class="header" id="nav-menu">
-        <div>
+    <header class="header" >
+        <div id="nav-menu"> 
             <nav id="navigation">
                 <div class="navbar-right">
-                    <a href="#home">
+                    <a href="#home" class="bottom-loader">
                         Home
                     </a>
-                    <a href="#about">
+                    <a href="#about" class="bottom-loader">
                         About Me
                     </a>
-                    <a href="#skills">
+                    <a href="#skills" class="bottom-loader">
                         Skills
                     </a>
-                    <a href="#projects">
+                    <a href="#projects" class="bottom-loader">
                         Projects
                     </a>
-                    <a href="#contact">
+                    <a href="#contact" class="bottom-loader">
                         Contact
                     </a>
                     <a id="resume" href="./assets/pdfs/Gaurav_Ganguly_Resume.pdf" download target="_blank">My Resume</a>
+                    <div id="dark-mode-icon">
+                        <img id="mode-img" title="night mode" src="./assets/Images/dark.png" alt="">
+                    </div>
                 </div>
+
             </nav>
 
-            <div class="video-container">
-                <video autoplay loop muted id="video-bg">
-          
-                  <source src="./assets/video/black1080.mp4" type="video/mp4">
-          
-                </video>
+            <!-- <div id="picture">
+                <img src="./assets/Images/GS88431.JPG" alt="" >
+            </div> -->
+            
+        </div>
+        <div id="about">
+            <div id="personal-info">
+                <h1>Gaurav Ganguly</h1>
             </div>
         </div>
     </header>
+
+    
 </body>
 </html>
 
+<script>
+    var mode = document.getElementById("mode-img");
+    mode.onclick = function(){
+
+        document.body.classList.toggle("dark-mode");
+        if(document.body.classList.contains("dark-mode")){
+            mode.src = "./assets/Images/light.png";
+            mode.title = "Light mode";
+            document.body.style.backgroundColor = "black";
+        }
+        else{
+            mode.src = "./assets/Images/dark.png";
+            mode.title = "night mode";
+            document.body.style.backgroundColor = "white";
+        }
+    }
+</script>
 <script src="./assets/Scripts/script.js"></script>
