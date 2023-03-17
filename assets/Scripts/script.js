@@ -5,3 +5,10 @@ document.getElementById("resume").addEventListener("click", function(){
 
 // var vid = document.getElementById("video-bg");
 // vid.playbackRate = .7;
+
+const header = document.querySelector("header");
+window.addEventListener("scroll", function(){
+
+    header.classList.toggle("sticky", this.window.scrollY >100);
+});
+

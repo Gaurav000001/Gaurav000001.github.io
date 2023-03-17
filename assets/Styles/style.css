@@ -9,15 +9,10 @@
     --nav-font-size: 1.1rem;
     --primary-color: black;
     --secondary-color: blue;
+    --dark-mode-button-background: rgb(199, 199, 199);
 }
 
-
-
-.navbar-right{
-  float:right;
-  /* margin-right:5%; */
-  margin-top: 2%;
-}
+/*============================================  Bottom Loader Section  ==============================================*/
 
 .bottom-loader{
   text-decoration:none;
@@ -43,31 +38,7 @@
   background-size: 92% 2px;
 }
 
-
-/* #navigation>div{
-  background-color: black;
-} */
-
-/* .navbar-logo{
-  padding-left:10%;
-  font-family: var(--font-family);
-  font-size:30px;
-  font-weight:bold;
-  text-decoration:none;
-  color:#fff; 
-} */
-
-/* .video-container {
-z-index: -100;
-width:100%;
-height:100%;
-overflow:hidden;
-position:absolute;
-top:0;
-left:0;
-background-color: black;
-} */
-
+/*================================================ Resume Styles ====================================================*/
 
 #resume:hover{
   background-color: #f9fcff;
@@ -79,6 +50,7 @@ background-color: black;
   border-radius: 10px;
   background-color: #1971c5;
   margin-left: .5rem;
+  margin-right: 1rem;
 
   text-decoration:none;
   font-size: var(--nav-font-size);
@@ -88,45 +60,208 @@ background-color: black;
   font-weight:900;
 }
 
-#personal-info{
-  width: 95vw;
+
+/*============================================  Navbar Section nav-menu =============================================*/
+
+.logo{
   color: var(--primary-color);
   font-family: var(--font-family);
-  /* margin: auto; */
-  /* border: 1px solid red; */
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 100;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 800;
 }
 
-/* #picture{
-  width: 90vw;
-}
-#picture>img{
-  width: 20vw;
-  border-radius: 50%;
-  margin: auto;
-} */
-
-#nav-menu>div{
+.nav-menu{
   display: flex;
-  flex-direction: column;
-  /* line-height: 7vh; */
+  margin-top: 1.5%;
+  width: 100vw;
+  justify-content: space-between;
+  padding-bottom: 3px;
+  border-bottom: 1px solid rgb(126, 126, 126);
+}
+
+.nav-menu>a{
+  margin-top: -0.5%;
+  margin-left: 1%;
+}
+.nav-menu>ul{
+  display: flex;
+}
+
+.nav-menu>ul>li{
+  list-style-type: none;
 }
 
 
-/*============================================  Dark - Light mode option  ===========================================*/
-.dark-mode{
-  --primary-color: rgb(255, 255, 255);
-  --secondary-color: #1579d6;
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  transition: all ease-in-out 0.5s;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 0 15px;
+  background: #040b14;
+  overflow-y: auto;
 }
-#dark-mode-icon>img{
-  width: 2vw;
+
+#header .profile img {
+  margin: 15px 30px 15px auto;
+  display: block;
+  width: 120px;
+  border: 8px solid #2c2f3f;
 }
-#dark-mode-icon{
-  float: right;
-  margin: 0vw 2vw;
+
+#header .profile h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  -moz-text-align-last: center;
+  text-align-last: center;
+  font-family: "Poppins", sans-serif;
 }
-#dark-mode-icon:hover{
+
+#header .profile h1 a,
+#header .profile h1 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#header .profile .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #212431;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 6px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#header .profile .social-links a:hover {
+  background: #149ddd;
+  color: #fff;
+  text-decoration: none;
+}
+
+#main {
+  margin-right: 0;
+}
+
+@media (max-width: 1199px) {
+  #header {
+    /* right: -30px; */
+  }
+
+  #main {
+    margin-right: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Desktop Navigation */
+.nav-menu1 {
+  padding: 30px 0 0 0;
+}
+
+.nav-menu1 * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu1 > ul > li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu1 a,
+.nav-menu1 a:focus {
+  display: flex;
+  align-items: center;
+  color: #a8a9b4;
+  padding: 12px 15px;
+  transition: 0.3s;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.nav-menu1 a i,
+.nav-menu1 a:focus i {
+  font-size: 24px;
+  padding-right: 8px;
+  color: #6f7180;
+}
+
+.nav-menu1 a:hover,
+.nav-menu1 .active,
+.nav-menu1 .active:focus,
+.nav-menu1 li:hover > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-menu1 a:hover i,
+.nav-menu1 .active i,
+.nav-menu1 .active:focus i,
+.nav-menu1 li:hover > a i {
+  color: #149ddd;
+}
+
+.nav-menu1 > ul > li:last-child{
+  margin-top: 10px;
+}
+
+/* Mobile Navigation */
+.mobile-nav-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 9998;
+  border: 0;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  background-color: #149ddd;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  border-radius: 50px;
   cursor: pointer;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active #header {
+  right: 0;
+}
+
+
+
+
+.close-integrated{
+  display: flex;
+  justify-content: space-around;
+}
+.close-integrated>div{
+  margin-right: -10px;
+  margin-top: -80px;
 }
