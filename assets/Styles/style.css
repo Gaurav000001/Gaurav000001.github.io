@@ -40,13 +40,13 @@
 
 /*================================================ Resume Styles ====================================================*/
 
-#resume:hover{
+.resume:hover{
   background-color: #f9fcff;
   border-radius: 10px;
   color: #318fe7;
   transition: background-color .5s ease-in, color .5s ease-in;
 }
-#resume{
+.resume{
   border-radius: 10px;
   background-color: #1971c5;
   margin-left: .5rem;
@@ -62,6 +62,8 @@
 
 
 /*============================================  Navbar Section nav-menu =============================================*/
+
+/*============================================  Desctop Navigation bar ==============================================*/
 
 .logo{
   color: var(--primary-color);
@@ -93,9 +95,9 @@
 }
 
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
+/*============================================ (Mobile - Tab) Navigation bar ===========================================*/
+
+
 #header {
   position: fixed;
   top: 0;
@@ -159,19 +161,13 @@
 }
 
 @media (max-width: 1199px) {
-  #header {
-    /* right: -30px; */
-  }
 
   #main {
     margin-right: 0;
   }
 }
 
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-/* Desktop Navigation */
+
 .nav-menu1 {
   padding: 30px 0 0 0;
 }
@@ -255,7 +251,7 @@
 }
 
 
-
+/*============================================  Small navbar close button ==============================================*/
 
 .close-integrated{
   display: flex;
