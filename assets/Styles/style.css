@@ -218,37 +218,10 @@
 
 .nav-menu1 > ul > li:last-child{
   margin-top: 10px;
+  
 }
 
-/* Mobile Navigation */
-.mobile-nav-toggle {
-  position: fixed;
-  right: 15px;
-  top: 15px;
-  z-index: 9998;
-  border: 0;
-  font-size: 24px;
-  transition: all 0.4s;
-  outline: none !important;
-  background-color: #149ddd;
-  color: #fff;
-  width: 40px;
-  height: 40px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 0;
-  border-radius: 50px;
-  cursor: pointer;
-}
 
-.mobile-nav-active {
-  overflow: hidden;
-}
-
-.mobile-nav-active #header {
-  right: 0;
-}
 
 
 /*============================================  Small navbar close button ==============================================*/
@@ -260,4 +233,75 @@
 .close-integrated>div{
   margin-right: -10px;
   margin-top: -80px;
+}
+
+
+
+/*==============================================  Github Section CSS ================================================*/
+
+#stat{
+  width: 80vw;
+  display: flex; 
+  justify-content: center;
+  float: none;
+  margin: auto;
+}
+
+#stat> div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#gitCalender{
+  width: 70vw; 
+  float: none; 
+  margin: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  #stat{
+    width: 80vw;
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    float: none;
+    margin: auto;
+  }
+  
+  #stat> div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #gitCalender{
+    width: 70vw; 
+    float: none; 
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #stat{
+    width: 80vw;
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    float: none;
+    margin: auto;
+  }
+
+  #stat> div{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #gitCalender{
+    width: 70vw; 
+    float: none; 
+    margin: auto;
+  }
 }
