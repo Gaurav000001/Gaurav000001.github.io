@@ -4,6 +4,7 @@
 }
 
 
+
 :root{
     --font-family: Arial;
     --nav-font-size: 1.1rem;
@@ -168,23 +169,23 @@
 }
 
 
-.nav-menu1 {
+#nav-menu {
   padding: 30px 0 0 0;
 }
 
-.nav-menu1 * {
+#nav-menu * {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.nav-menu1 > ul > li {
+#nav-menu > ul > li {
   position: relative;
   white-space: nowrap;
 }
 
-.nav-menu1 a,
-.nav-menu1 a:focus {
+#nav-menu  a,
+#nav-menu  a:focus {
   display: flex;
   align-items: center;
   color: #a8a9b4;
@@ -194,29 +195,29 @@
   font-weight: 500;
 }
 
-.nav-menu1 a i,
-.nav-menu1 a:focus i {
+#nav-menu  a i,
+#nav-menu a:focus i {
   font-size: 24px;
   padding-right: 8px;
   color: #6f7180;
 }
 
-.nav-menu1 a:hover,
-.nav-menu1 .active,
-.nav-menu1 .active:focus,
-.nav-menu1 li:hover > a {
+#nav-menu a:hover,
+#nav-menu .active,
+#nav-menu .active:focus,
+#nav-menu li:hover > a {
   text-decoration: none;
   color: #fff;
 }
 
-.nav-menu1 a:hover i,
-.nav-menu1 .active i,
-.nav-menu1 .active:focus i,
-.nav-menu1 li:hover > a i {
+#nav-menu a:hover i,
+#nav-menu .active i,
+#nav-menu .active:focus i,
+#nav-menu  li:hover > a i {
   color: #149ddd;
 }
 
-.nav-menu1 > ul > li:last-child{
+#nav-menu > ul > li:last-child{
   margin-top: 10px;
   
 }
@@ -239,13 +240,20 @@
 
 /*==============================================  Github Section CSS ================================================*/
 
+.max-width{
+  width: 70vw;
+  float: none;
+  margin: auto;
+}
+
 #stat{
-  width: 80vw;
+  width: 100%;
   display: flex; 
   justify-content: center;
   float: none;
   margin: auto;
 }
+
 
 #stat> div{
   display: flex;
@@ -254,53 +262,34 @@
 }
 
 #gitCalender{
-  width: 70vw; 
+  width: 100%; 
   float: none; 
   margin: auto;
+  color: black;
 }
 
-@media screen and (max-width: 1024px) {
-  #stat{
-    width: 80vw;
-    display: flex; 
-    justify-content: center;
-    flex-direction: column;
-    float: none;
-    margin: auto;
-  }
+
+/* @media screen and (max-width: 768px) {
   
-  #stat> div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+} */
+
+#github-section-heading{
+  width: 100vw;
+  display: block; 
+  text-align: center; 
+  margin: 1.5rem auto; 
+  border-top: 3px solid gray; 
+  border-bottom: 3px solid gray; 
   
-  #gitCalender{
-    width: 70vw; 
-    float: none; 
-    margin: auto;
-  }
 }
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1199px) {
   #stat{
-    width: 80vw;
-    display: flex; 
-    justify-content: center;
     flex-direction: column;
-    float: none;
-    margin: auto;
   }
 
-  #stat> div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  #gitCalender{
-    width: 70vw; 
-    float: none; 
-    margin: auto;
+  #github-section-heading{
+    margin-top: 5rem;
   }
 }
