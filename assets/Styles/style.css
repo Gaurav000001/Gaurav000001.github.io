@@ -43,23 +43,22 @@
 /*================================================ Resume Styles ====================================================*/
 
 .resume:hover{
-  background-color: #f9fcff;
-  border-radius: 10px;
+  background-color: #cfe6fd;
   color: #318fe7;
   transition: background-color .5s ease-in, color .5s ease-in;
 }
 .resume{
-  border-radius: 10px;
-  background-color: #1971c5;
+  border-radius: 7px;
+  background-color: rgb(17, 0, 255);
   margin-left: .5rem;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 
   text-decoration:none;
   font-size: var(--nav-font-size);
   padding:10px;
   color: #fff;
   font-family: var(--font-family);
-  font-weight:900;
+  font-weight:800;
 }
 
 
@@ -72,7 +71,7 @@
   font-family: var(--font-family);
   text-decoration: none;
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .nav-menu{
@@ -333,7 +332,7 @@
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #0084ff;
+  background-color: rgb(28, 28, 255);
   color: white;
   cursor: pointer;
   padding: 6px 4px 5px 4px;
@@ -342,22 +341,59 @@
 }
 
 #myBtn:hover {
-  background-color: #24baff;
+  background-color: #0084ff;
 }
 
 /*================================================== Home Section ===================================================*/
 
 .text-box{
-  padding-top: 15%;
+  margin-left: 5%;
+  padding-top: 14%;
   font-size: 17px;
-  letter-spacing: 1px;
-  line-height: 26px;
   height: 100vh;
 }
 
 .text-box> h1{
   font-size: 55px;
-  line-height: 160px;
+  line-height: 140px;
   font-family: var(--font-family);
   font-weight: 600;
+}
+
+.text-box> p{
+  margin-top: -30px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.text-box> a{
+  margin-top: 30px;
+  display: inline-block;
+  border-radius: 6px;
+  border: 2px solid blue;
+  padding: 10px 30px;
+  color: blue;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.text-box> a:hover{
+  background-color: #d6ebff;
+  border: 2px solid #d6ebff;
+}
+
+.text-box > a:last-child{
+  margin-left: 15px;
+  color: white;
+  background-color: blue;
+}
+
+.text-box > a:last-child:hover{
+  background-color: #1553ff;
+  border: 2px solid #0044ff;
+}
+
+.auto-input{
+  padding-bottom: 4px;
+  border-bottom: 3px solid blue;
 }

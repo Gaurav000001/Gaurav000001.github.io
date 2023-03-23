@@ -31,7 +31,7 @@
 
     <!-- Header part -->
     <header class="nav-menu" id="nav-display-big-screen">
-        <a href="#" class="logo"> Gaurav <span> Ganguly </span></a>
+        <a href="#" class="logo"> Gaurav <span style="color:blue;"> Ganguly </span></a>
 
         <ul class="navbar-right">
             <li><a href="#home" class="bottom-loader">Home</a></li>
@@ -109,10 +109,10 @@
     <section id="home">
         <div class="text-box">
             <h1>I'm Gaurav Ganguly</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum consectetur vero quas at animi eveniet possimus doloremque sequi, modi accusantium officiis sed recusandae maxime reiciendis nam a ratione magnam aliquid.</p>
+            <p>I'm <span class="auto-input"></span></p>
 
             <a href="#">Contact Me</a>
-            <a href="#">My Resume <i style="font-size: 13px;" class="fa-solid fa-arrow-down"></i></a>
+            <a href="#">My Resume <i style="font-size: 14px;" class="fa-solid fa-arrow-down"></i></a>
             
         </div>
     </section>
@@ -204,25 +204,17 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 
-    <!-- home section design -->
-    <!-- <section id="home" >
-        <div class="nav-link home">
-            <div class="slide">
-                <span class="one">Hello</span>
-                <span class="two">I'm</span>
-            </div>
-            <h1 id="user-detail-name">Gaurav Ganguly</h1>
-            <h3 id="user-detail-skill">Java Backend <span>Developer.</span></h3>
-            <br>
-            <button id="resume-button-2">
-                <a href="/Shahid_Afridi_Resume.pdf" download="pdf"
-                id="resume-link-2" onclick="window.open('https://drive.google.com/file/d/1qHGUfyzCZpWwPCLKIIJxZzLu07ItXL84/view')"><span><i class='bx bx-download' ></i></span>Resume</a>
-            </button>
-        </div>
-    
 
-    </section> -->
-
+    <!-- Typing animation script -->
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-input", {
+            strings: ["Gaurav Ganguly", "a Developer.", "Specialized in Java."],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
     
 </body>
 </html>
@@ -231,7 +223,7 @@
 <script src="./assets/Scripts/script.js"></script>
 
 
-
+<!-- Scroll to Top arrow button Logic -->
 <script>
     // Get the button
     let mybutton = document.getElementById("myBtn");
@@ -252,4 +244,4 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
-    </script>
+</script>
