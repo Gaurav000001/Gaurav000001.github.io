@@ -21,10 +21,12 @@
     <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet" />
-
-
+    
+    
 </head>
 <body onresize="fun()">
+    <!-- Scroll to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
     
 
     <!-- Header part -->
@@ -32,12 +34,12 @@
         <a href="#" class="logo"> Gaurav <span> Ganguly </span></a>
 
         <ul class="navbar-right">
-            <li><a href="#home" id="home" class="bottom-loader">Home</a></li>
-            <li><a href="#about" id="about" class="bottom-loader">About Me</a></li>
-            <li><a href="#skills" id="skills" class="bottom-loader">Skills</a></li>
-            <li><a href="#projects" id="projects" class="bottom-loader">Projects</a></li>
-            <li><a href="#github" id="contact" class="bottom-loader">Github</a></li>
-            <li><a href="#contact" id="contact" class="bottom-loader">Contact</a></li>
+            <li><a href="#home" class="bottom-loader">Home</a></li>
+            <li><a href="#about" class="bottom-loader">About Me</a></li>
+            <li><a href="#skills" class="bottom-loader">Skills</a></li>
+            <li><a href="#projects" class="bottom-loader">Projects</a></li>
+            <li><a href="#github" class="bottom-loader">Github</a></li>
+            <li><a href="#contact" class="bottom-loader">Contact</a></li>
             <li><a id="Big-nav-resume" class="resume" href="./assets/pdfs/Gaurav_Ganguly_Resume.pdf" download target="_blank">My Resume</a></li>
         </ul>
 
@@ -104,19 +106,41 @@
     <!-- resume icon  -->
     <!-- <i class="fa-light fa-file-arrow-down"></i> -->
 
+    <section id="home">
+        <div class="text-box">
+            <h1>I'm Gaurav Ganguly</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum consectetur vero quas at animi eveniet possimus doloremque sequi, modi accusantium officiis sed recusandae maxime reiciendis nam a ratione magnam aliquid.</p>
+
+            <a href="#">Contact Me</a>
+            <a href="#">My Resume <i style="font-size: 13px;" class="fa-solid fa-arrow-down"></i></a>
+            
+        </div>
+    </section>
+
+
+    <section id="about">
+        <div class="about-top"></div>
+
+        <div>
+            <h2 id="about-section-heading">About <span style="color: rgb(37, 37, 255);">Me</span></h2>
+        </div>
+
+
+    </section>
 
 
 
-
-    <section>
+    <section id="github">
             <!-- <----------STATS------->
+        <div class="git-top"></div>
+
         <div class="main-text">
             
             <h2 id="github-section-heading">GitHub <span style="color: rgb(37, 37, 255);">Statistics</span></h2>
             
         </div>
 
-        <div class="max-width" id="githubs">
+        <div class="max-width">
             <div id="stat">
                 <div>
                     <img  id="github-streak-stats" alt="7oSkaaa's Github Stats"  src="https://github-readme-streak-stats.herokuapp.com/?user=Gaurav000001&theme=tokyonight&hide_border=false" />
@@ -160,10 +184,12 @@
         function fun(){
             if(window.innerWidth > 1199){
                 smallWindow.style.display = "none";
+                bigWindow.style.position = "fixed";
                 bigWindow.style.display = "flex";
             }
             else{
                 bigWindow.style.display = "none";
+                bigWindow.style.position = "initial";
                 smallWindow.style.display = "block";
             }
         }
@@ -203,3 +229,27 @@
 
 
 <script src="./assets/Scripts/script.js"></script>
+
+
+
+<script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>

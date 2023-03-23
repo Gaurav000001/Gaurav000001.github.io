@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 
@@ -75,12 +76,14 @@
 }
 
 .nav-menu{
-  display: flex;
-  margin-top: 1.5%;
+  top: 0;
   width: 100vw;
+  display: flex;
   justify-content: space-between;
+  padding-top: 1.5%;
   padding-bottom: 3px;
   border-bottom: 1px solid rgb(126, 126, 126);
+  background-color: white;
 }
 
 .nav-menu>a{
@@ -114,7 +117,7 @@
 }
 
 #header .profile img {
-  margin: 15px 30px 15px auto;
+  margin: 40px 30px 15px auto;
   display: block;
   width: 120px;
   border: 8px solid #2c2f3f;
@@ -170,7 +173,9 @@
 
 
 #nav-menu {
+  position: fixed;
   padding: 30px 0 0 0;
+  margin-top: 240px;
 }
 
 #nav-menu * {
@@ -236,9 +241,28 @@
   margin-top: -80px;
 }
 
+/*=================================================  About Section ===================================================*/
+
+.about-top{
+  padding-top: 100px;
+}
+
+#about-section-heading{
+  width: 100vw;
+  display: block; 
+  text-align: center; 
+  margin: auto; 
+  border-top: 3px solid gray; 
+  border-bottom: 3px solid gray; 
+}
+
+@media screen and (max-width: 1299px) {
+
+  
+}
 
 
-/*==============================================  Github Section CSS ================================================*/
+/*=================================================  Github Section ===================================================*/
 
 .max-width{
   width: 70vw;
@@ -251,7 +275,7 @@
   display: flex; 
   justify-content: center;
   float: none;
-  margin: auto;
+  margin: 30px auto;
 }
 
 
@@ -266,18 +290,22 @@
   float: none; 
   margin: auto;
   color: black;
+  margin-bottom: 30px;
 }
 
 
 /* @media screen and (max-width: 768px) {
   
 } */
+.git-top{
+  padding-top: 100px;
+}
 
 #github-section-heading{
   width: 100vw;
   display: block; 
   text-align: center; 
-  margin: 1.5rem auto; 
+  margin: auto; 
   border-top: 3px solid gray; 
   border-bottom: 3px solid gray; 
   
@@ -289,7 +317,47 @@
     flex-direction: column;
   }
 
-  #github-section-heading{
-    margin-top: 5rem;
-  }
+  
+}
+
+
+
+/*=================================================  button to top ================================================*/
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #0084ff;
+  color: white;
+  cursor: pointer;
+  padding: 6px 4px 5px 4px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+#myBtn:hover {
+  background-color: #24baff;
+}
+
+/*================================================== Home Section ===================================================*/
+
+.text-box{
+  padding-top: 15%;
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height: 26px;
+  height: 100vh;
+}
+
+.text-box> h1{
+  font-size: 55px;
+  line-height: 160px;
+  font-family: var(--font-family);
+  font-weight: 600;
 }
