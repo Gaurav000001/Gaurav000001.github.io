@@ -246,34 +246,34 @@
   padding-top: 100px;
 }
 
-#about-section-heading{
-  width: 100vw;
+.section-heading{
   display: block; 
   text-align: center; 
   margin: auto; 
   border-top: 3px solid gray; 
   border-bottom: 3px solid gray; 
+  background-color: rgb(249, 252, 255);
 }
 
-@media screen and (max-width: 1299px) {
+/* @media screen and (max-width: 1199px) {
 
   
-}
+} */
 
 
 /*=================================================  Github Section ===================================================*/
 
 .max-width{
-  width: 70vw;
-  float: none;
-  margin: auto;
+  /* width: 70vw; */
+  /* float: none; */
+  /* margin: auto; */
 }
 
 #stat{
-  width: 100%;
+  /* width: 100vw; */
   display: flex; 
   justify-content: center;
-  float: none;
+  /* float: none; */
   margin: 30px auto;
 }
 
@@ -285,15 +285,15 @@
 }
 
 #gitCalender{
-  width: 100%; 
-  float: none; 
+  width: 80vw; 
+  /* float: none;  */
   margin: auto;
   color: black;
   margin-bottom: 30px;
 }
 
 
-/* @media screen and (max-width: 768px) {
+/* @media (max-width: 768px) {
   
 } */
 .git-top{
@@ -301,7 +301,7 @@
 }
 
 #github-section-heading{
-  width: 100vw;
+  /* width: 100vw; */
   display: block; 
   text-align: center; 
   margin: auto; 
@@ -311,7 +311,7 @@
 }
 
 
-@media screen and (max-width: 1199px) {
+@media (max-width: 1199px) {
   #stat{
     flex-direction: column;
   }
@@ -341,7 +341,8 @@
 }
 
 #myBtn:hover {
-  background-color: #0084ff;
+  background-color: #a9d5ff;
+  color: blue;
 }
 
 /*================================================== Home Section ===================================================*/
@@ -355,13 +356,14 @@
 
 .text-box> h1{
   font-size: 55px;
-  line-height: 140px;
+  /* line-height: 140px; */
+  padding-bottom: 1rem;
   font-family: var(--font-family);
   font-weight: 600;
 }
 
 .text-box> p{
-  margin-top: -30px;
+  /* margin-top: -30px; */
   font-size: 20px;
   font-weight: 600;
 }
@@ -379,7 +381,7 @@
 
 .text-box> a:hover{
   background-color: #d6ebff;
-  border: 2px solid #d6ebff;
+  border-color: #d6ebff;
 }
 
 .text-box > a:last-child{
@@ -396,4 +398,62 @@
 .auto-input{
   padding-bottom: 4px;
   border-bottom: 3px solid blue;
+}
+
+#home{
+  /* width: 100vw; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.photo{
+  width: 50%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+#home>div>img{
+  width: 420px;
+  margin-top: 5%;
+  border-radius: 50%;
+  height: 400px;
+}
+
+
+
+
+
+@media (max-width: 1199px){
+  #home> .text-box> h1{
+    font-size: 40px;
+    /* line-height: 150px; */
+  }
+  #home>div>img{
+    width: 320px;
+    margin-top: -60%;
+    border-radius: 50%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px){
+  #home{
+    flex-direction:column-reverse;
+  }
+  #home> .text-box> h1{
+    font-size: 30px;
+    /* line-height: 150px; */
+  }
+  #home>div>img{
+    width: 300px;
+    margin-top: 150px;
+    border-radius: 50%;
+    height: 290px;
+    margin-left: 30px;
+  }
+  .text-box{
+    margin-left: 20px;
+  }
 }
