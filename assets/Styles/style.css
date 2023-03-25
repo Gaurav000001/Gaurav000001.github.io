@@ -437,6 +437,7 @@
   .text-box> a{
     border: 2px solid blue;
     color: blue;
+    padding: 10px 22px;
   }
   
   .text-box> a:hover{
@@ -468,11 +469,12 @@
     margin-top: 100px;
     border-radius: 50%;
     height: 290px;
-    margin-left: 30px;
+    margin-left: 0px;
   }
   .text-box{
     margin-top: 0px;
     margin-left: 20px;
     height: 200%;
   }
+
 }
