@@ -248,7 +248,7 @@
 
 /*=================================================  About Section ===================================================*/
 
-.about-top{
+.top-pad{
   padding-top: 100px;
 }
 
@@ -275,6 +275,39 @@
   font-size: 18px;
 }
 
+
+.section-sub-heading {
+  width: 70%;
+  margin: auto;
+}
+
+.section-sub-heading h3 {
+  margin: 40px auto;
+  color: #414e70;
+}
+
+.section-sub-heading h3::after {
+  margin-top: 6px;
+  content: "";
+  display: block;
+  width: 90px;
+  height: 3px;
+  background: #0f55eb;
+}
+
+.languages-grid{
+  width: 60%; 
+  margin: auto; 
+  margin-bottom: 60px;
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.languages-grid-images{
+  width: 100px; 
+  border-radius: 10px;
+}
+
 @media screen and (max-width: 1199px) {
 
   .about-info{
@@ -283,6 +316,17 @@
   }
 
 }
+
+@media screen and (max-width: 768px) {
+
+  .languages-grid{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 40px;
+  }
+
+}
+
 
 
 /*=================================================  Github Section ===================================================*/
@@ -313,9 +357,6 @@
   margin-bottom: 30px;
 }
 
-.git-top{
-  padding-top: 100px;
-}
 
 
 @media (max-width: 1199px) {
@@ -496,3 +537,5 @@
   }
 
 }
+
+
