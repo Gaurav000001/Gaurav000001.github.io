@@ -1,5 +1,5 @@
 //putting the link to the resume section and giving the functionality to open in a new tab
-document.getElementById("resume-link-1").addEventListener("click", function(){
+document.getElementById("resume-button-1").addEventListener("click", function(){
     window.open("https://drive.google.com/file/d/1S8nqpKJWjNnIg9iYQ-FpHbYRkq7MSCkh/view?usp=share_link", '_blank')
 })
 
@@ -7,7 +7,7 @@ document.getElementById("Small-nav-resume").addEventListener("click", function()
     window.open("https://drive.google.com/file/d/1S8nqpKJWjNnIg9iYQ-FpHbYRkq7MSCkh/view?usp=share_link", '_blank')
 })
 
-document.getElementById("resume-link-2").addEventListener("click", function(){
+document.getElementById("resume-button-2").addEventListener("click", function(){
     window.open("https://drive.google.com/file/d/1S8nqpKJWjNnIg9iYQ-FpHbYRkq7MSCkh/view?usp=share_link", '_blank')
 })
 
