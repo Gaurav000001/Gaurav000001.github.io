@@ -253,12 +253,18 @@
 }
 
 .section-heading{
+  width: fit-content;
   display: block; 
   text-align: center; 
-  margin: auto; 
-  border-top: 3px solid gray; 
+  /* margin: auto;  */
+  /* border-top: 3px solid gray; 
   border-bottom: 3px solid gray; 
-  background-color: rgb(249, 252, 255);
+  background-color: rgb(249, 252, 255); */
+  font-size: 40px;
+  border-bottom: 3px solid blue;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  font-weight: 800;
 }
 
 .about-info{
