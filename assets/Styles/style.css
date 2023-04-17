@@ -713,16 +713,21 @@
   margin-bottom: 50px; 
   margin-top: 70px;
   background-color: #f2f9ff;
+  border-radius: 10px;
 }
 
 .contact-2-main{
   width: 45%; 
-  border: 1px solid black; 
+  border: 1px solid white; 
   border-radius: 10px;
 }
 
 .contact-1-main{
   width: 45%;
+}
+
+.contact-1-main>img{
+  border-radius: 10px;
 }
 
 
