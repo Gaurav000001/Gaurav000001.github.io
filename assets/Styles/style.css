@@ -546,7 +546,7 @@
 
 
 
-/*================================================== Projects Section ==================================================*/
+/*================================================== Projects Section =======================================*/
 
 
 .project-buttons{
@@ -634,4 +634,101 @@
 .tech-stack-card{
   font-size: 30px; 
   color: #0f55eb;
+}
+
+
+
+
+@media (max-width: 1199px){
+  .Projects-main{
+    display: flex; 
+    width: 100%; 
+    /* padding: 15px 30px; */
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .project-buttons> a:hover{
+    background-color: #fff;
+    border-color: #0f55eb;
+  }
+  
+  .project-buttons > a:last-child:hover{
+    background-color: #0f55eb;
+    border: 2px solid #0f55eb;
+  }
+
+  .Projects-main>div:first-child{
+    width: 100%; 
+    height: 100%;
+  }
+  
+  .Projects-main>div:first-child>img{
+    border-radius: 20px; 
+    border: 6px solid #0f55eb;
+    width: 100%; 
+    height: 95%;
+  }
+  
+  .Projects-main>div:nth-child(2){
+    margin-top: 20px;
+    width: 100%; 
+    display: flex; 
+    flex-direction: column;
+  }
+}
+
+/* @media (max-width: 768px){
+  .Projects-main:hover{
+    display: flex; 
+    width: 70%; 
+    padding: 15px 30px;
+    margin: auto; 
+    border-radius: 20px; 
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: all ease-in .15s;
+    margin-top: 20px;
+  }
+
+  .project-buttons> a:hover{
+    background-color: #fff;
+    border-color: #0f55eb;
+  }
+  
+  .project-buttons > a:last-child:hover{
+    background-color: #0f55eb;
+    border: 2px solid #0f55eb;
+  }
+} */
+
+
+/*================================================== Contacts Section =======================================*/
+
+.contact-main{
+  width: 96%; 
+  margin: auto;
+  display: flex; 
+  justify-content: space-between; 
+  margin-bottom: 200px; 
+  margin-top: 70px;
+}
+
+.contact-2-main{
+  width: 45%; 
+  border: 1px solid black; 
+  border-radius: 10px;
+}
+
+
+
+@media (max-width: 1199px){
+  .contact-main{
+    flex-direction: column;
+  }
+
+  .contact-2-main{
+    width: 100%;
+    margin: auto;
+  }
 }
