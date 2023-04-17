@@ -712,12 +712,17 @@
   justify-content: space-between; 
   margin-bottom: 50px; 
   margin-top: 70px;
+  background-color: #f2f9ff;
 }
 
 .contact-2-main{
   width: 45%; 
   border: 1px solid black; 
   border-radius: 10px;
+}
+
+.contact-1-main{
+  width: 45%;
 }
 
 
@@ -727,9 +732,15 @@
     flex-direction: column;
   }
 
+  .contact-1-main{
+    width: 100%;
+    margin: auto;
+  }
+
   .contact-2-main{
     width: 100%;
     margin: auto;
+    margin-top: 20px;
   }
 }
 
