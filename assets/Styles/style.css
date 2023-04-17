@@ -710,7 +710,7 @@
   margin: auto;
   display: flex; 
   justify-content: space-between; 
-  margin-bottom: 200px; 
+  margin-bottom: 50px; 
   margin-top: 70px;
 }
 
@@ -730,5 +730,57 @@
   .contact-2-main{
     width: 100%;
     margin: auto;
+  }
+}
+
+
+
+/*================================================== Footer Section =======================================*/
+
+footer{
+  background-color: black; 
+  height: 50px; 
+  display: flex;
+}
+
+footer>p{
+  display: flex;
+}
+
+footer>p>span{
+  align-self: center;
+  color: white;
+}
+
+footer>p>span:first-child>span{
+  color: white; 
+  font-weight: 700; 
+  font-size: 18px;
+}
+
+footer>p>span:last-child{
+  margin-left: 20px;
+}
+
+footer>p>span>a{
+  color:rgb(58, 58, 255); 
+  text-decoration: none;
+}
+
+@media (max-width: 468px){
+  footer{
+    height: 70px;
+  }
+  footer>p{
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer>p>span:first-child{
+    padding-top: 10px;
+  }
+
+  footer>p>span:last-child{
+    margin-left: 0px;
   }
 }
