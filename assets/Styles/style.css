@@ -256,13 +256,14 @@
   width: fit-content;
   display: block; 
   text-align: center; 
+  margin: auto;
   /* margin: auto;  */
   /* border-top: 3px solid gray; 
   border-bottom: 3px solid gray; 
   background-color: rgb(249, 252, 255); */
   font-size: 38px;
   border-bottom: 3px solid blue;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   margin-bottom: 40px;
   font-weight: 900;
 }
@@ -483,7 +484,23 @@
   height: 400px;
 }
 
+#about>div>img{
+  width: 270px;
+  border-radius: 50%;
+  height: 260px;
+  display: block;
+  margin: auto;
+  /* margin-top: 60px; */
+}
 
+.about-photo{
+  width: 90%;
+  /* border: 1px solid red; */
+  margin: auto;
+  padding: 20px 0px;
+  border-radius: 20px;
+  background-color: #f2f9ff;
+}
 
 
 
