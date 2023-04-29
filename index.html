@@ -678,8 +678,11 @@
     function scrollFunction() {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         mybutton.style.display = "block";
+        bigWindow.classList.add("navbar-toggle-class");
+
       } else {
         mybutton.style.display = "none";
+        bigWindow.classList.remove("navbar-toggle-class");
       }
     }
     

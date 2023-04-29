@@ -14,7 +14,16 @@
     --dark-mode-button-background: rgb(199, 199, 199);
 }
 
-/*============================================  Bottom Loader Section  ==============================================*/
+/*============================================ Toggle classes Section  ============================================*/
+
+
+.navbar-toggle-class{
+  border-bottom: 1px solid rgb(126, 126, 126);
+  background-color: #f8fcff;
+}
+
+
+/*============================================  Bottom Loader Section  ============================================*/
 
 .bottom-loader{
   text-decoration:none;
@@ -40,7 +49,7 @@
   background-size: 92% 2px;
 }
 
-/*================================================ Resume Styles ====================================================*/
+/*================================================ Resume Styles ==================================================*/
 
 .resume:hover{
   background-color: #cfe6fd;
@@ -68,9 +77,9 @@
   }
 }
 
-/*============================================  Navbar Section nav-menu =============================================*/
+/*============================================  Navbar Section nav-menu ===========================================*/
 
-/*============================================  Desctop Navigation bar ==============================================*/
+/*============================================  Desktop Navigation bar ============================================*/
 
 .logo{
   color: var(--primary-color);
@@ -87,8 +96,7 @@
   justify-content: space-between;
   padding-top: 1.5%;
   padding-bottom: 3px;
-  border-bottom: 1px solid rgb(126, 126, 126);
-  background-color: white;
+  z-index: 1000;
 }
 
 .nav-menu>a{
