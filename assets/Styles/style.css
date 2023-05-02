@@ -521,8 +521,7 @@
   margin-left: 15px;
   width: 33px; 
   padding: 4px; 
-  border: 2px solid #0084ff; 
-  /* background-color: #c7e4ff; */
+  border: 2px solid #0084ff;
   border-radius: 50%;
 }
 .home-icons>img:hover{
@@ -574,6 +573,15 @@
     color: white;
     background-color: blue;
   }
+
+  .home-icons>img{
+    border: 2px solid #c7e4ff;
+    background-color: #c7e4ff;
+  }
+  .home-icons>img:hover{
+    border-color: #c7e4ff;
+    background-color: #c7e4ff;
+  }
 }
 
 @media (max-width: 768px){
@@ -609,6 +617,15 @@
     margin-top: 0px;
     margin-left: 20px;
     height: 200%;
+  }
+
+  .home-icons>img{
+    border: 2px solid #c7e4ff;
+    background-color: #c7e4ff;
+  }
+  .home-icons>img:hover{
+    border-color: #c7e4ff;
+    background-color: #c7e4ff;
   }
 
 }
