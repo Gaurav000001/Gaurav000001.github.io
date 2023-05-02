@@ -243,7 +243,7 @@
 
 
 
-/*============================================  Small navbar close button ==============================================*/
+/*============================================  Small navbar close button =========================================*/
 
 .close-integrated{
   display: flex;
@@ -254,7 +254,7 @@
   margin-top: -80px;
 }
 
-/*=================================================  About Section ===================================================*/
+/*=================================================  About Section ================================================*/
 
 .top-pad{
   padding-top: 100px;
@@ -344,7 +344,7 @@
 
 
 
-/*=================================================  Github Section ===================================================*/
+/*=================================================  Github Section ===============================================*/
 
 .max-width{
   width: 80%;
@@ -424,6 +424,7 @@
 #home{
   display: flex;
   justify-content: space-between;
+  height: 85vh;
 }
 
 .text-box{
@@ -431,7 +432,6 @@
   margin-left: 5%;
   padding-top: 13%;
   font-size: 17px;
-  height: 100vh;
 }
 
 .text-box> h1{
@@ -489,6 +489,7 @@
 }
 
 #home>div>img{
+  margin-top: 130px;
   width: 420px;
   border-radius: 50%;
   height: 400px;
@@ -531,6 +532,12 @@
 }
 
 @media (max-width: 1199px){
+
+  #home{
+    margin-top: 70px;
+    margin-bottom: -70px;
+  }
+
   .text-box{
     width: 100%;
   }
@@ -539,8 +546,8 @@
     font-size: 40px;
   }
   #home>div>img{
+    margin-top: -80px;
     width: 320px;
-    margin-top: 0%;
     border-radius: 50%;
     height: 300px;
   }
@@ -586,6 +593,11 @@
 
 @media (max-width: 768px){
 
+  #home{
+    margin-bottom: 0px;
+    margin-top: 170px;
+  }
+
   .text-box{
     width: 90%;
   }
@@ -608,11 +620,12 @@
 
   #home>div>img{
     width: 300px;
-    margin-top: 100px;
     border-radius: 50%;
     height: 290px;
     margin-left: 0px;
+    margin-top: 100px;
   }
+
   .text-box{
     margin-top: 0px;
     margin-left: 20px;
