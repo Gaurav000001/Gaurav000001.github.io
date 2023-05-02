@@ -420,25 +420,30 @@
   }
 }
 
-/*================================================== Home Section ===================================================*/
+/*================================================== Home Section =================================================*/
+#home{
+  display: flex;
+  justify-content: space-between;
+}
 
 .text-box{
+  width: 60%;
   margin-left: 5%;
-  padding-top: 15%;
+  padding-top: 13%;
   font-size: 17px;
   height: 100vh;
 }
 
 .text-box> h1{
   font-size: 55px;
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
   font-family: var(--font-family);
   font-weight: 600;
 }
 
 .text-box> p{
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 28px;
+  font-weight: 700;
 }
 
 .text-box> a{
@@ -469,14 +474,11 @@
 }
 
 .auto-input{
-  padding-bottom: 4px;
-  border-bottom: 3px solid blue;
+  font-weight: 700;
+  font-size: 28px;
+  color: blue;
 }
 
-#home{
-  display: flex;
-  justify-content: space-between;
-}
 
 .photu{
   width: 50%;
@@ -510,9 +512,30 @@
   background-color: #f2f9ff;
 }
 
-
+.home-icons{
+  display: flex;
+  margin-left: -15px;
+  margin-top: 25px;
+}
+.home-icons>img{
+  margin-left: 15px;
+  width: 33px; 
+  padding: 4px; 
+  border: 2px solid #0084ff; 
+  /* background-color: #c7e4ff; */
+  border-radius: 50%;
+}
+.home-icons>img:hover{
+  border-color: #c7e4ff;
+  background-color: #c7e4ff;
+  cursor: pointer;
+}
 
 @media (max-width: 1199px){
+  .text-box{
+    width: 100%;
+  }
+
   #home> .text-box> h1{
     font-size: 40px;
   }
@@ -523,6 +546,13 @@
     height: 300px;
   }
 
+  .text-box> p{
+    font-size: 20px;
+  }
+
+  .auto-input{
+    font-size: 20px;
+  }
 
   .text-box> a{
     border: 2px solid blue;
@@ -547,6 +577,11 @@
 }
 
 @media (max-width: 768px){
+
+  .text-box{
+    width: 90%;
+  }
+
   #home{
     flex-direction:column-reverse;
   }
@@ -554,6 +589,15 @@
     font-size: 30px;
     /* line-height: 150px; */
   }
+  .text-box> p{
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .auto-input{
+    font-size: 20px;
+  }
+
   #home>div>img{
     width: 300px;
     margin-top: 100px;
