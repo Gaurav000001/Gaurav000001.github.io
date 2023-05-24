@@ -111,6 +111,9 @@
   list-style-type: none;
 }
 
+.nav-menu>ul>li>a:hover{
+  color: rgb(48, 48, 204);
+}
 
 /*============================================ (Mobile - Tab) Navigation bar ===========================================*/
 
