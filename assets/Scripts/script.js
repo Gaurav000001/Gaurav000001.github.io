@@ -111,3 +111,16 @@ home_github_button.addEventListener('click', () => {
     window.open(url, '_blank');
     
 });
+
+
+
+const small_nav_mail_Button = document.getElementById('small-nav-email');
+
+small_nav_mail_Button.addEventListener('click', () => {
+
+  // Define the email address where I want to redirect the user to
+  const emailAddress = 'gangulygaurav166@gmail.com';
+
+  // Open the user's email client and populate the "To" field with the email address
+  window.open(`mailto:${emailAddress}`, '_blank');
+});

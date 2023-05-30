@@ -155,7 +155,7 @@
   text-decoration: none;
 }
 
-#header .profile .social-links a {
+#header .profile .social-links i {
   font-size: 18px;
   display: inline-block;
   background: #212431;
@@ -168,12 +168,6 @@
   width: 36px;
   height: 36px;
   transition: 0.3s;
-}
-
-#header .profile .social-links a:hover {
-  background: #149ddd;
-  color: #fff;
-  text-decoration: none;
 }
 
 #main {
