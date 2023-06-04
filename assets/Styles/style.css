@@ -419,19 +419,21 @@
 
 /*================================================== Home Section =================================================*/
 .home{
-  width: 100%;
+  width: 95%;
   display: flex;
   justify-content: space-between;
-  height: 85vh;
-  padding-top: 13%;
+  /* height: 85vh; */
   margin: auto;
+  margin-top: 150px;
+  /* border: 1px solid black; */
 }
 
 .text-box{
   width: 60%;
-  margin-left: 5%;
+  /* margin-left: 5%; */
   /* padding-top: 13%; */
   font-size: 17px;
+  margin: auto;
 }
 
 .text-box> h1{
@@ -446,7 +448,12 @@
   font-weight: 700;
 }
 
-.text-box> a{
+.text-box > .home-blue-buttons {
+  width: 105%;
+  /* border: 1px solid black; */
+}
+
+.text-box > .home-blue-buttons > a{
   margin-top: 30px;
   display: inline-block;
   border-radius: 6px;
@@ -457,18 +464,18 @@
   font-weight: 600;
 }
 
-.text-box> a:hover{
+.text-box > .home-blue-buttons > a:hover{
   background-color: #d6ebff;
   border-color: #d6ebff;
 }
 
-.text-box > a:last-child{
+.text-box > .home-blue-buttons > a:last-child{
   margin-left: 15px;
   color: white;
   background-color: blue;
 }
 
-.text-box > a:last-child:hover{
+.text-box > .home-blue-buttons > a:last-child:hover{
   background-color: #1553ff;
   border: 2px solid #0044ff;
 }
@@ -534,50 +541,47 @@
 @media (max-width: 1199px){
 
   .home{
-    margin-top: 70px;
-    margin-bottom: -70px;
+    margin-top: 170px;
+    /* margin-bottom: -70px; */
     /* border: 1px solid black; */
   }
 
   .text-box{
     width: 100%;
+    font-size: 20px;
   }
 
   .home> .text-box> h1{
     font-size: 40px;
   }
   .home>div>img{
-    margin-top: -80px;
+    /* margin-top: -80px; */
     width: 320px;
     border-radius: 50%;
     height: 300px;
-  }
-
-  .text-box> p{
-    font-size: 20px;
   }
 
   .auto-input{
     font-size: 20px;
   }
 
-  .text-box> a{
+  .text-box > .home-blue-buttons > a{
     border: 2px solid blue;
     color: blue;
     padding: 10px 22px;
   }
   
-  .text-box> a:hover{
+  .text-box > .home-blue-buttons > a:hover{
     background-color: white;
     border-color: blue;
   }
   
-  .text-box > a:last-child{
+  .text-box> .home-blue-buttons > a:last-child{
     color: white;
     background-color: blue;
   }
   
-  .text-box > a:last-child:hover{
+  .text-box > .home-blue-buttons > a:last-child:hover{
     color: white;
     background-color: blue;
   }
@@ -596,13 +600,14 @@
 
   .home{
     margin-bottom: 0px;
-    margin-top: 190px;
+    margin-top: 90px;
+    width: 100%;
   }
 
   .text-box{
     width: 90%;
     margin-top: 30px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     height: 200%;
   }
 
@@ -645,10 +650,13 @@
 }
 
 
-@media (max-width: 290px){
-  .home{
-    margin-bottom: 0px;
-    margin-top: 360px;
+@media (max-width: 382px){
+  .text-box > .home-blue-buttons > a:last-child{
+    margin-left: 0px;
+  }
+
+  .text-box > .home-blue-buttons > a:first-child{
+    margin-left: -10px;
   }
 }
 
