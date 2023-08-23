@@ -4,5 +4,7 @@
     "cypress:open": "cypress open",
     "start": ""
   },
-  "dependencies": {}
+  "dependencies": {
+    "github-calendar-graph": "^0.2.8"
+  }
 }
