@@ -28,7 +28,7 @@
  🚀 Projects 🚀  =>
 Boat LifeStyle || ASOS || Phar-Easy || Tender Management CLI || Benacademy || Kentaki Amusement Park
 
-Email: saurabhganguly38@gmail.com
+Email: gangulygaurav166@gmail.com
 LinkedIn: [Gaurav Ganguly](https://www.linkedin.com/in/gaurav-ganguly-bb7ba9246/)
 GitHub: [gaurav000001](https://github.com/gaurav000001)
 
