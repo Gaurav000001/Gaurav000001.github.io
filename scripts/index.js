@@ -1,6 +1,10 @@
 let resumeBtn = document.querySelector(".resume-button") ;
 let downloadIcon = document.createElement("i") ;
 downloadIcon.classList.add("fa-regular", "fa-circle-down") ;
+
+// Direct download link from Google Drive
+const directDownloadLink = "https://drive.google.com/file/d/1S8nqpKJWjNnIg9iYQ-FpHbYRkq7MSCkh/view?usp=sharing";
+
 resumeBtn.addEventListener("mouseenter", ()=>{
   resumeBtn.textContent = "" ;
     resumeBtn.append(downloadIcon)
@@ -9,6 +13,10 @@ resumeBtn.addEventListener("mouseleave", ()=>{
     resumeBtn.removeChild(downloadIcon)
     resumeBtn.textContent = "Resume" ;
 })
+resumeBtn.addEventListener("click", function() {
+  // Open the direct download link in a new tab
+  window.open(directDownloadLink, "_blank");
+});
 
 let tabLinks = document.querySelectorAll(".tab-links") ;
 let tabContents = document.querySelectorAll(".tab-contents") ;
